@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { css } from "styled-components";
 import Link from "next/link";
-import DefaultTheme from "styled-components";
 
 export const flexCenter: ReturnType<typeof css> = css`
   display: flex;

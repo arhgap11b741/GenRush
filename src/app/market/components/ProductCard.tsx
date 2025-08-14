@@ -1,5 +1,5 @@
-import { ReactComponent as HeartIcon } from "../../../assets/images/icons/ic_heart.svg"; // tsconfig.json 및 declarations.d.ts 파일 참고
-import { Link } from "react-router-dom";
+import HeartIcon from "icons/ic_heart.svg";
+import Link from "next/link";
 import { Product } from "@/types/productTypes";
 import styled from "styled-components";
 
@@ -54,7 +54,7 @@ interface ProductCardProps {
 
 const ProductCard: React.FC<ProductCardProps> = ({ item }) => {
   return (
-    <ItemCardContainer to={`/items/${item.id}`} className="itemCard">
+    <ItemCardContainer href={`/items/${item.id}`} className="ProduCard">
       <ItemCardThumbnail
         src={item.images[0]}
         alt={`${item.name} 상품 썸네일`}
